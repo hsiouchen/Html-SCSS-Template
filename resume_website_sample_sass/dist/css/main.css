@@ -5,6 +5,49 @@ header {
   padding: 1rem;
 }
 
+.title {
+  color: #00c5b1;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-size: 500;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 6em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -12,7 +55,7 @@ a {
 
 .home {
   height: 100%;
-  padding-top: 25vh;
+  padding-top: 20vh;
   overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -24,7 +67,6 @@ a {
 }
 
 .home__name {
-  font-size: 4rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
   margin-bottom: 1rem;
@@ -32,7 +74,7 @@ a {
 }
 
 .home__name--last {
-  color: #e6c50b;
+  color: #00c5b1;
 }
 
 .menu-btn {
@@ -52,10 +94,13 @@ a {
   background: white;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  position: absolute;
   right: 0;
   top: 0.5rem;
   width: 28px;
   height: 3px;
+  background: white;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::before {
@@ -64,9 +109,13 @@ a {
   background: white;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  content: '';
+  position: absolute;
   top: -8px;
   width: 28px;
   height: 3px;
+  background: white;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::after {
@@ -75,9 +124,13 @@ a {
   background: white;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  content: '';
+  position: absolute;
   top: 8px;
   width: 20px;
   height: 3px;
+  background: white;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger.open {
@@ -141,6 +194,7 @@ a {
 }
 
 .nav .menu-nav__item {
+  font-size: 2rem;
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
   -webkit-transition: all 0.5s ease-in-out;
@@ -153,14 +207,12 @@ a {
 }
 
 .nav .menu-nav__item.active > a {
-  color: #e6c50b;
-  font-weight: 600;
+  color: #00c5b1;
+  font-weight: 500;
 }
 
 .nav .menu-nav__link {
   display: inline-block;
-  font-size: 2rem;
-  font-weight: 300;
   text-transform: uppercase;
   padding: 2rem 0;
   -webkit-transition: all 0.5s ease-in-out;
@@ -168,7 +220,7 @@ a {
 }
 
 .nav .menu-nav__link:hover {
-  color: #e6c50b;
+  color: #00c5b1;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -225,10 +277,8 @@ a {
   text-align: center;
 }
 
-.about__work--title {
-  color: #e6c50b;
-  padding-bottom: 2rem;
-  font-size: 3rem;
+.about__work p {
+  text-align: left;
 }
 
 .about .jobs {
@@ -244,11 +294,12 @@ a {
 .about .jobs__job {
   background: #414141;
   padding: 0.5rem;
-  border-bottom: 5px solid #e6c50b;
+  border-bottom: 5px solid #00c5b1;
+  margin: 0.5rem;
 }
 
 .about .jobs__job--year {
-  color: #e6c50b;
+  color: #00c5b1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -261,11 +312,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: left;
-  margin: -2rem 0;
+  margin: -2.5rem 0;
 }
 
 .about .jobs__job--title {
-  margin: 3.5rem 0 0.5rem auto;
+  margin: 3rem 0 0.5rem auto;
 }
 
 .about .social-icons {
@@ -308,13 +359,6 @@ a {
           justify-content: flex-end;
 }
 
-.projects__header--title {
-  color: #e6c50b;
-  padding-bottom: 2rem;
-  font-size: 3rem;
-  margin-bottom: 2rem;
-}
-
 .projects__items {
   width: 60vw;
   margin: 2rem auto 0 auto;
@@ -323,11 +367,12 @@ a {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-gap: 2rem;
+  font-size: 1.5rem;
 }
 
 .projects__item {
   position: relative;
-  border-bottom: 5px solid #e6c50b;
+  border-bottom: 5px solid #00c5b1;
   overflow: hidden;
 }
 
@@ -342,7 +387,7 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #e6c50b;
+  background: #00c5b1;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -375,13 +420,13 @@ a {
 
 .projects__btn {
   opacity: 0;
-  color: black;
+  color: white;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .projects__btn:hover {
-  color: white;
+  color: #1a1a1a;
 }
 
 .projects .social-icons {
@@ -401,7 +446,7 @@ a {
 
 .contact {
   height: 100%;
-  padding-top: 25vh;
+  padding-top: 20vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,6 +455,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -418,11 +464,11 @@ a {
   background-size: cover;
 }
 
-.contact h2 {
-  color: #e6c50b;
+.contact h3 {
+  color: #00c5b1;
   padding-bottom: 2rem;
   font-size: 3rem;
-  margin-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .contact__list {
@@ -430,18 +476,33 @@ a {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 1.5rem;
-  font-size: 2rem;
+  grid-gap: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .contact__list--info {
-  color: #e6c50b;
+  color: #00c5b1;
   padding-bottom: 2rem;
 }
 
 .contact .social-icons {
+  font-size: 2rem;
   position: initial;
   margin-top: 2rem;
+}
+
+.contact footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: unset;
 }
 
 @media screen and (min-width: 768px) {
@@ -466,59 +527,88 @@ a {
   .nav .menu-nav__link {
     font-size: 1.5rem;
   }
-  .about__bio {
-    font-size: 1.5rem;
+  .title {
+    font-size: 3rem;
   }
-  .projects__bio-image {
+  .about .jobs__job--year {
+    font-size: 2rem;
+  }
+  .about .jobs__job--co {
+    font-size: 2rem;
+    margin: -3rem 0 auto;
+  }
+  .about .jobs__job--title {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem auto;
+  }
+  .projects__header-image {
     height: 40vh;
+  }
+  .projects__header--title {
+    font-size: 3rem;
   }
   .projects__items {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .projects .text-secondary {
-    font-size: 3rem;
-  }
-  .projects .social-icons {
-    position: fixed;
-    bottom: 1rem;
-    left: 0.5rem;
-  }
-  .projects .social-icons a {
-    padding: 0.4rem;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .projects .social-icons a:hover {
-    color: #e6c50b;
-  }
-  .projects footer {
-    position: fixed;
-    bottom: 0.4rem;
-    right: 1rem;
-    text-align: right;
-    padding: 1rem;
-    color: white;
+  .projects_btn {
+    font-size: 1.5rem;
   }
   .contact__list {
+    text-align: left;
+    font-size: 2rem;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    margin: 5rem;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
+  .about .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about footer {
+    -webkit-transform: rotate(360deg) translate(1rem);
+            transform: rotate(360deg) translate(1rem);
+  }
   .projects__items {
+    font-size: 2rem;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  .projects .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .projects footer {
+    -webkit-transform: rotate(360deg) translate(1rem);
+            transform: rotate(360deg) translate(1rem);
   }
   .contact__list {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    margin: 5rem;
   }
 }
 
 @media screen and (min-width: 1300px) {
-  .projects__bio-image {
+  .title {
+    font-size: 4rem;
+  }
+  .projects__header-image {
     height: 50vh;
   }
 }
@@ -547,25 +637,24 @@ main {
 main .social-icons {
   position: fixed;
   bottom: 1rem;
-  left: 0.5rem;
+  left: 1rem;
+  font-size: 1rem;
 }
 
 main .social-icons a {
-  padding: 0.4rem;
+  padding: 0.25rem;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 main .social-icons a:hover {
-  color: #e6c50b;
+  color: #00c5b1;
 }
 
-footer {
-  font-size: 1rem;
+main footer {
   position: fixed;
-  bottom: 0.4rem;
+  bottom: 0.25rem;
   right: 1rem;
-  text-align: right;
   padding: 1rem;
   color: white;
 }

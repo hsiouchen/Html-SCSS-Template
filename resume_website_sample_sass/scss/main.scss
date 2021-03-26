@@ -29,10 +29,11 @@ main {
   .social-icons {
     position: fixed;
     bottom: 1rem;
-    left: 0.5rem;
+    left: 1rem;
+    font-size: 1rem;
   
     a {
-      padding: 0.4rem;
+      padding: 0.25rem;
       @include transition-ease;
   
       &:hover {
@@ -40,14 +41,13 @@ main {
       }
     }
   }
+  footer {
+    position: fixed;
+    bottom: 0.25rem;
+    right: 1rem;
+    padding: 1rem;
+    color: set-text-color($primary-color);
+  }
   
 }
-footer {
-  font-size: 1rem;
-  position: fixed;
-  bottom: 0.4rem;
-  right: 1rem;
-  text-align: right;
-  padding: 1rem;
-  color: set-text-color($primary-color);
-}
+

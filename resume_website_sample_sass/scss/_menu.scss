@@ -16,34 +16,34 @@
 
   &__burger {
     @include burger_position;
-    // position: absolute;
+    position: absolute;
     right: 0;
     top: 0.5rem;
     width: 28px;
     height: 3px;
-    // background: set-text-color($primary-color);
-    // @include transition-ease;
+    background: set-text-color($primary-color);
+    @include transition-ease;
 
     &::before {
       @include burger_position;
-      // content: '';
-      // position: absolute;
+      content: '';
+      position: absolute;
       top: -8px;
       width: 28px;
       height: 3px;
-      // background: set-text-color($primary-color);
-      // @include transition-ease;
+      background: set-text-color($primary-color);
+      @include transition-ease;
     }
 
     &::after {
       @include burger_position;
-      // content: '';
-      // position: absolute;
+      content: '';
+      position: absolute;
       top: 8px;
       width: 20px;
       height: 3px;
-      // background: set-text-color($primary-color);
-      // @include transition-ease;
+      background: set-text-color($primary-color);
+      @include transition-ease;
     }
 
     &.open {
@@ -92,6 +92,7 @@
     }
 
     &__item {
+      font-size: map-get($font-sizes, font-m);
       transform: translateX(100vw);
       @include transition-ease;
 
@@ -101,14 +102,12 @@
 
       &.active > a {
         color: $secondary-color;
-        font-weight: map-get($font-weights, font-wl);
+        font-weight: map-get($font-weights, font-wm);
       }
     }
 
     &__link {
-      display: inline-block;
-      font-size: map-get($font-sizes, font-s);
-      font-weight: map-get($font-weights, font-wxs);
+      display: inline-block;      
       text-transform: uppercase;
       padding: 2rem 0;
       @include transition-ease;

@@ -5,14 +5,41 @@ header {
   padding: 1rem;
 }
 
+.title {
+  @include text-secondary;
+  font-size: map-get($font-sizes, font-l);
+  font-weight: map-get($font-weights, font-wl);
+}
+.subtitle {
+  font-size: map-get($font-sizes, font-m);
+  font-size: map-get($font-weights, font-wm);
+}
+.paragraph {
+  font-size: map-get($font-sizes, font-s);
+}
+
 h1 {
-  font-size: map-get($font-weights, font-xl);
+  font-size: map-get($font-sizes, font-xxl);
+  font-weight: map-get($font-weights, font-wxl);
 }
 h2 {
-  font-size: map-get($font-weights, font-m);
+  font-size: map-get($font-sizes, font-xl);
+  font-weight: map-get($font-weights, font-wl);
 }
 h3 {
-  font-size: map-get($font-weights, font-s);
+  font-size: map-get($font-sizes, font-l);
+  font-weight: map-get($font-weights, font-wm);
+}
+h4 {
+  font-size: map-get($font-sizes, font-m);
+  font-weight: map-get($font-weights, font-s);
+}
+h5 {
+  font-size: map-get($font-sizes, font-s);
+  font-weight: map-get($font-weights, font-xs);
+}
+h6 {
+  font-size: map-get($font-sizes, font-xs);
 }
 a {
   color: set-text-color($primary-color);

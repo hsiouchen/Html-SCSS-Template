@@ -16,12 +16,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-
-    &--title {
-      @include text-secondary;
-      font-size: map-get($font-sizes, font-m);
-      margin-bottom: 2rem;
-    }
   }
 
   &__items {
@@ -30,7 +24,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
-    font-size: map-get($font-sizes, font-xs);
+    font-size: map-get($font-sizes, font-s);
   }
 
   &__item {

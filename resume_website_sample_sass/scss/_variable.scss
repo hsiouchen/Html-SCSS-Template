@@ -1,14 +1,16 @@
 $primary-color: #272727;
-$secondary-color: #e6c50b;
+$secondary-color: rgb(0, 197, 177);
 $text-color:#fff;
 
 $font-set: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 $font-sizes: (
-  font-sx: 1rem,
-  font-s: 2rem,
-  font-m: 3rem,
-  font-l: 4rem, 
-  font-xl: 5rem,
+  font-xxs: 0.5rem,
+  font-xs: 1rem,
+  font-s: 1.5rem,
+  font-m: 2rem,
+  font-l: 3rem, 
+  font-xl: 4rem,
   font-xxl: 6em
 );
 $font-weights: (
@@ -32,6 +34,11 @@ $font-weights: (
   padding-bottom: 2rem;  
 }
 
+@mixin header-title {
+  @include text-secondary;
+  font-size: map-get($font-sizes, font-l);  
+}
+
 @mixin text-right {
   text-align: right;  
 }
@@ -46,7 +53,7 @@ $font-weights: (
   }
 }
 @mixin media-lg {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     @content;
   }
 }

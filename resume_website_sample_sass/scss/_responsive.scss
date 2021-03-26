@@ -19,72 +19,101 @@
       }
 
       &__link {
-        font-size: 1.5rem;
+        font-size: map-get($font-sizes, font-s);
       }
     }
   }
 
-  .about__bio {
-    font-size: 1.5rem;
+  .title {
+    font-size: map-get($font-sizes, font-l);
+  }
+
+  .about {
+    .jobs {
+      &__job {
+        &--year {
+          font-size: map-get($font-sizes, font-m);
+        }
+        &--co {
+          font-size: map-get($font-sizes, font-m);
+          margin: -3rem 0 auto;
+        }
+        &--title {
+          font-size: map-get($font-sizes, font-s);
+          margin: 1rem 0 0.5rem auto;
+        }
+      }
+    }
   }
 
   .projects {
-    &__bio-image {
+    &__header-image {
       height: 40vh;
+    }
+    &__header--title {
+      font-size: map-get($font-sizes, font-l);
     }
     &__items {
       grid-template-columns: repeat(2, 1fr);
     }
-    .text-secondary {
-      font-size: 3rem;
-    }
-
-    .social-icons {
-      position: fixed;
-      bottom: 1rem;
-      left: 0.5rem;
-    
-      a {
-        padding: 0.4rem;
-        @include transition-ease;
-    
-        &:hover {
-          color: $secondary-color;
-        }
-      }
+    &_btn {
+      font-size: map-get($font-sizes, font-s)
     }    
-    footer {
-      position: fixed;
-      bottom: 0.4rem;
-      right: 1rem;
-    text-align: right;
-    padding: 1rem;
-    color: set-text-color($primary-color);
-    }
-
-
   }
 
   .contact__list {
+    text-align: left;
+    font-size: map-get($font-sizes, font-m);
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    margin: 5rem; 
   }
 
 }
 
 @include media-lg {
-  .projects {
-    &__items {
-      grid-template-columns: repeat(3, 1fr);
-    }    
+  .about {
+    .social-icons {
+      display: flex;
+      flex-direction: row;
+    }
+    footer {
+      transform: 
+        rotate(360deg) 
+        translate(1rem);
+    }
   }
 
-  .contact__list {
-    grid-template-columns: repeat(3, 1fr);
+  .projects {
+    &__items {
+      font-size: map-get($font-sizes, font-m);
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .social-icons {
+      display: flex;
+      flex-direction: row;
+    }
+    footer {
+      transform: 
+        rotate(360deg) 
+        translate(1rem);
+    }
   }
+
+  .contact__list {    
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    margin: 5rem;
+  }
+  
 }
 
 @include media-xl {
-  .projects__bio-image {
+  .title {
+    font-size: map-get($font-sizes, font-xl);
+  }
+
+  .projects__header-image {
     height: 50vh;
   }
 }

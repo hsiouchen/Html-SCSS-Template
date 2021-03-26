@@ -1,9 +1,10 @@
 .contact {
   height: 100%;
-  padding-top: 25vh;
+  padding-top: 20vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   background: 
     linear-gradient(
@@ -14,16 +15,15 @@
     url('../img/header-contact.jpg') center top;
   background-size: cover;
 
-  h2 {
-    @include text-secondary;
-    font-size: map-get($font-sizes, font-m);
-    margin-bottom: 2rem;
+  h3 {
+    @include header-title;
+    padding-bottom: 3rem;
   }
 
   &__list {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1.5rem;
+    grid-gap: 0.5rem;    
     font-size: map-get($font-sizes, font-s);
 
     &--info {
@@ -32,7 +32,15 @@
   }
 
   .social-icons {
+    font-size: 2rem;
     position: initial;
     margin-top: 2rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    right:unset;
   }
 }

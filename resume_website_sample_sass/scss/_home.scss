@@ -1,6 +1,6 @@
 .home {
   height: 100%;
-  padding-top: 25vh;
+  padding-top: 20vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
@@ -14,7 +14,6 @@
   background-size: cover;
 
   &__name {
-    font-size: map-get($font-sizes, font-l);
     padding-top: 1rem;
     padding-bottom: 2rem;
     margin-bottom: 1rem;
@@ -24,9 +23,4 @@
       color: $secondary-color;
     }
   }
-
-  &__jobtitle {
-    font-size: map-get($font-sizes, font-xs);
-  }
-
 }
