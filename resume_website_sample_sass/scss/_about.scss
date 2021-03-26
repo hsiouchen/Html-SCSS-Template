@@ -1,0 +1,76 @@
+.about {
+  padding-bottom: 3rem;
+
+  &__header {
+    height: 50vh;
+    width: 100%;
+    background: 
+      linear-gradient(
+        to right,
+        rgba($primary-color, 0.9),
+        rgba($primary-color, 0.5)
+      ),
+      url('../img/header-about.jpg') center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__work {
+    width: 80%;
+    text-align: center;
+
+    &--title {
+      @include text-secondary;
+      font-size: map-get($font-sizes, font-m);
+    }
+  }
+
+  .jobs {
+    width: 70vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    &__job {
+      background: lighten($primary-color, 10%);
+      padding: 0.5rem;
+      border-bottom: 5px solid $secondary-color;
+
+      &--year {
+        color: $secondary-color;
+        align-items: center;
+        text-align: right;
+        margin: 0.5rem 0;
+      }
+
+      &--co {
+        align-items: center;
+        text-align: left;
+        margin: -2rem 0;
+      }
+
+      &--title {
+        margin: 3.5rem 0 0.5rem auto;
+      }      
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    transform:
+      rotate(90deg)
+      translate(-3rem, -5rem);
+  }
+}

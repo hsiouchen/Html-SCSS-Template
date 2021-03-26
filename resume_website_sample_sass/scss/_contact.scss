@@ -1,0 +1,38 @@
+.contact {
+  height: 100%;
+  padding-top: 25vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: 
+    linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url('../img/header-contact.jpg') center top;
+  background-size: cover;
+
+  h2 {
+    @include text-secondary;
+    font-size: map-get($font-sizes, font-m);
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    font-size: map-get($font-sizes, font-s);
+
+    &--info {
+      @include text-secondary;
+    }
+  }
+
+  .social-icons {
+    position: initial;
+    margin-top: 2rem;
+  }
+}

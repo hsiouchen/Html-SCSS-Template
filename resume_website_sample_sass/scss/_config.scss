@@ -1,0 +1,20 @@
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: map-get($font-weights, font-xl);
+}
+h2 {
+  font-size: map-get($font-weights, font-m);
+}
+h3 {
+  font-size: map-get($font-weights, font-s);
+}
+a {
+  color: set-text-color($primary-color);
+  text-decoration: none;
+}

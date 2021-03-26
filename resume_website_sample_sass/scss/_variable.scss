@@ -1,0 +1,62 @@
+$primary-color: #272727;
+$secondary-color: #e6c50b;
+$text-color:#fff;
+
+$font-set: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-sizes: (
+  font-sx: 1rem,
+  font-s: 2rem,
+  font-m: 3rem,
+  font-l: 4rem, 
+  font-xl: 5rem,
+  font-xxl: 6em
+);
+$font-weights: (
+  font-wxs: 300,
+  font-ws: 400,
+  font-wm: 500,
+  font-wl: 600, 
+  font-wxl: 700
+);
+
+@function set-text-color($color) {
+  @if(lightness($color) > 40%) {
+    @return darken($color, 90%);
+  } @else {
+    @return lighten($color, 100%);
+  }
+}
+
+@mixin text-secondary {
+  color: $secondary-color;
+  padding-bottom: 2rem;  
+}
+
+@mixin text-right {
+  text-align: right;  
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (min-width: 1300px) {
+    @content;
+  }
+}
+@mixin media-xxl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
