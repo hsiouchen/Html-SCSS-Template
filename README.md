@@ -1,4 +1,4 @@
-<h1>This is a RESUME website's practice base on HTML with scss and Javascript.</h1>
+<h1>This is a RESUME website's practice base on HTML with <code>scss</code> and Javascript.</h1>
 
 
 ![Home page](https://user-images.githubusercontent.com/80557471/184745810-93c9c918-327c-4bc0-afd5-fbbe2f3c7d2b.jpg)
